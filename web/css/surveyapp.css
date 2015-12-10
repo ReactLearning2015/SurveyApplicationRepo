@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 30, 2015, 2:01:00 PM
+    Author     : arun_aantony
+*/
+
+.surveyApp{
+    display: table;
+    border: 1px solid grey;  
+    font-family: 'Muli', 'Helvetica Neue', helvetica, arial;
+    min-width: 960px;
+    max-width: 960px;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 500px;
+}
+
+
+.completedSurvey{
+    display: table-cell;
+    width:20%;
+    border-right: 1px solid grey; 
+}
+
+.currentSurvey{
+    display: table-cell;
+    width:56%;
+}
+
+.questionnaire{
+    display: table-cell;
+    width: 20%;
+    border-left:1px solid grey; 
+}
+
+textarea{
+    height: 100px; 
+    width:  100%;
+}
+
+.qnda{
+    width: 80%;
+    margin: auto; 
+}
+
+p.answer{
+    font-style: italic; 
+}
+
+p.question{
+    font-weight: bold;
+}
+
+div.clear{
+    width: 20px;
+    height: 20px;
+}
