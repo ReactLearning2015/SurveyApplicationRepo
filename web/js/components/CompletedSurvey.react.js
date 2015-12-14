@@ -55,7 +55,7 @@ var CompletedSurvey = React.createClass({
     },
     
     _onClick: function(surveyID){
-        //todo: call action to load the questionaire panel with clicked survey
+        //call action to load the questionaire panel with clicked survey
         SurveyActions.viewCompletedSurvey({id: surveyID});
     }
 });

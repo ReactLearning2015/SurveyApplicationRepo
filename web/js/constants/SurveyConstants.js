@@ -7,6 +7,7 @@
 var keyMirror = require('keymirror');
 
 module.exports = keyMirror({
+    /*  Action types */
   SAVE_ANSWER: null,
   SAVE_SURVEY: null,
   VIEW_COMPLETED_SURVEY: null,

@@ -8,6 +8,11 @@ var SurveyActions = require("../actions/SurveyActions");
 var React = require('react');
 var ENTER_KEY_CODE = 13;
 
+/**
+ *className = question is used to decide whether the 
+ *question is displayed at CurrentSurvey panel(where question is being answered)
+ *or whether the question is displayed in questionnaire panel(along with user entry). 
+ **/
 var Question = React.createClass({
     render: function(){
         return (<p 
@@ -41,7 +46,10 @@ var Answer = React.createClass({
                 />);
         var para = (<p className= ' answer'>{this.state.text}</p>);
         var textarea
-
+        
+        /**
+         * to decide whether the answer tab should be a input area or label
+         * */
         if(this.props.type === "questionnaire"){
             textarea= para;
         }

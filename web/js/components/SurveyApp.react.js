@@ -47,6 +47,11 @@ var SurveyApp = React.createClass({
     SurveyActions.clearQuestionnaire();
   },
   
+  /**
+   * CompletedSurvey:   completed surveys are listed in this panel.
+   * CurrentSurvey: user have option to answer one question at a time.
+   * Questionnaire: the currentSurvey being answered is displayed in this panel.
+   * */
   render: function() {
       
     return (

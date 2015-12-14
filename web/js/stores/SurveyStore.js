@@ -78,8 +78,9 @@ SurveyStore.dispatchToken = AppDispatcher.register(function(action) {
   switch(action.actionType) {
 
     case SurveyConstants.SAVE_ANSWER:
-      //save the current answer and add the next question
+      //save the current answer and display the next question
       _current_survey[action.data.question] = action.data.answer;
+      _current_answer= '';
       if(_last_question==="true"){
         _current_question = '';
       }
@@ -138,7 +139,7 @@ SurveyStore.dispatchToken = AppDispatcher.register(function(action) {
         break;
     
     case SurveyConstants.CLEAR_QUESTIONNAIRE:
-        
+        //can be used to start a new survey.
         _current_survey= {};
         _current_question = _list_of_questions["1"];
         _current_answer = '';
@@ -150,7 +151,7 @@ SurveyStore.dispatchToken = AppDispatcher.register(function(action) {
         break;
     
     case SurveyConstants.LOAD_QNDA:
-
+        //load an answere question, in order to edit.
         _current_question= action.data.question;
         _current_answer= action.data.answer;
         
