@@ -85,7 +85,7 @@ var QndA = React.createClass({
     },
     
     _onClick: function(){
-        //todo:call action to load these question and answer in currentSurvey
+        //call action to load these question and answer in currentSurvey
         if(this.props.answer!=''){
             SurveyActions.loadQndAinCurrentSurvey({
                                     question: this.props.question,

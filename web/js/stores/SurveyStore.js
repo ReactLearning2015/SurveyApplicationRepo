@@ -73,7 +73,7 @@ var SurveyStore = assign({}, EventEmitter.prototype, {
 SurveyStore.dispatchToken = AppDispatcher.register(function(action) {
   
   var len = 0;
-  for(n in _list_of_questions){len++;}
+  for(var n in _list_of_questions){len++;}
     
   switch(action.actionType) {
 
@@ -90,7 +90,7 @@ SurveyStore.dispatchToken = AppDispatcher.register(function(action) {
       }
       else{
             var i = 1;
-            for(prop in _list_of_questions){
+            for(var prop in _list_of_questions){
                 if(_list_of_questions[prop] === action.data.question){
                     if(i < len){
                         _current_question = _list_of_questions[i+1];
